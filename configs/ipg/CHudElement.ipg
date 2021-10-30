@@ -1,0 +1,1 @@
+{"DateLastModified":"2020-12-19T18:27:14.5063066+08:00","InterfaceName":"CHudElement_interface","FunctionCount":30,"PaddingFunctionPrefix":"zz_pad","OutputFile":"","NonDestructive":true,"InstanceRelative":false,"CloseOnWrite":false,"DefinedFunctions":[{"Index":12,"FunctionSignature":"const char *GetName(void)"}]}

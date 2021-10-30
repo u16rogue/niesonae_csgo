@@ -1,0 +1,16 @@
+.vs/
+build/
+Debug/
+Release/
+obj/
+.test/
+graphics/tab_icon_template.psd
+graphics/ui_mockup/mockup.psd
+
+/re_notes.txt
+*.exe
+
+dev_tool.exe
+dev_tool.exe.config
+dev_tool.pdb
+dev_tool/obj

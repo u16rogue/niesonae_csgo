@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="winternal">
+      <UniqueIdentifier>{4ea7fe6e-6a40-4ac1-8668-f84daa99d929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module">
+      <UniqueIdentifier>{6842274f-8bca-43db-9410-95075353ff09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hash">
+      <UniqueIdentifier>{c9b6335c-11a3-4760-a1a0-760d6fd16dc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encryption">
+      <UniqueIdentifier>{bc7d4240-379d-413e-a007-53f85bc0011c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{ad1a2bd2-7c83-49d2-9f4d-d83a386b8e6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hook">
+      <UniqueIdentifier>{68a1fea8-dc3c-4773-b630-118c4d850809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{a14992fe-4e01-4cbd-9898-b5c68e3243c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="valve_sdk">
+      <UniqueIdentifier>{c62258b8-0935-49a4-bdd9-172e354417a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="valve_sdk\interfaces">
+      <UniqueIdentifier>{e5844443-d5b9-4109-bbfe-91c23c62c321}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="types.hpp" />
+    <ClInclude Include="iclass_vmt_idx.hpp" />
+    <ClInclude Include="console.hpp" />
+    <ClInclude Include="winternal\environment.hpp">
+      <Filter>winternal</Filter>
+    </ClInclude>
+    <ClInclude Include="winternal\imports.hpp">
+      <Filter>winternal</Filter>
+    </ClInclude>
+    <ClInclude Include="winternal\structs.hpp">
+      <Filter>winternal</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\sigscan.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\vfunc.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="module\module.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="module\module_csgo.hpp">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\hook.hpp">
+      <Filter>hook</Filter>
+    </ClInclude>
+    <ClInclude Include="hash\fnv.hpp">
+      <Filter>hash</Filter>
+    </ClInclude>
+    <ClInclude Include="encryption\xorstr.hpp">
+      <Filter>encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="valve_sdk\interface\IClientMode.hpp">
+      <Filter>valve_sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="valve_sdk\interface\IPanel.hpp">
+      <Filter>valve_sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="valve_sdk\interface\ISurface.hpp">
+      <Filter>valve_sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="valve_sdk\interface\IVEngineClient.hpp">
+      <Filter>valve_sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\control_base.hpp">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="color.hpp" />
+    <ClInclude Include="utils\hex.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="offsets.hpp" />
+    <ClInclude Include="vertex.hpp" />
+    <ClInclude Include="valve_sdk\angle.hpp">
+      <Filter>valve_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="valve_sdk\vector.hpp">
+      <Filter>valve_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="valve_sdk\glow_outline_effect.hpp">
+      <Filter>valve_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="valve_sdk\ultvector.hpp">
+      <Filter>valve_sdk</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

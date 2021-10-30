@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="chat_commands\cm_manager.hpp" />
+    <ClInclude Include="chat_commands\cm_module.hpp" />
+    <ClInclude Include="chat_commands\commands\cm_ctag.hpp" />
+    <ClInclude Include="globals.hpp" />
+    <ClInclude Include="hacks\clantag.hpp" />
+    <ClInclude Include="hacks\engine_glow.hpp" />
+    <ClInclude Include="hooks\clientcmd.hpp" />
+    <ClInclude Include="hooks\createmove.hpp" />
+    <ClInclude Include="hooks\painttraverse.hpp" />
+    <ClInclude Include="hooks\present.hpp" />
+    <ClInclude Include="hooks\reset.hpp" />
+    <ClInclude Include="hooks\sceneend.hpp" />
+    <ClInclude Include="hooks\updateglows.hpp" />
+    <ClInclude Include="hooks\wndproc.hpp" />
+    <ClInclude Include="initialization\initialization.hpp" />
+    <ClInclude Include="initialization\inits\entry.hpp" />
+    <ClInclude Include="initialization\inits\hacks.hpp" />
+    <ClInclude Include="initialization\inits\hooks.hpp" />
+    <ClInclude Include="initialization\inits\interfaces.hpp" />
+    <ClInclude Include="initialization\inits\menu.hpp" />
+    <ClInclude Include="initialization\inits\modules.hpp" />
+    <ClInclude Include="initialization\inits\patches.hpp" />
+    <ClInclude Include="initialization\inits\values.hpp" />
+    <ClInclude Include="initialization\init_base.hpp" />
+    <ClInclude Include="manager\player_manager.hpp" />
+    <ClInclude Include="ui\menu.hpp" />
+    <ClInclude Include="menu\sprites\sprite_menu.h" />
+    <ClInclude Include="ui\tab.hpp" />
+    <ClInclude Include="ui\tabs\combat.hpp" />
+    <ClInclude Include="ui\tabs\config.hpp" />
+    <ClInclude Include="ui\tabs\extension.hpp" />
+    <ClInclude Include="ui\tabs\misc.hpp" />
+    <ClInclude Include="ui\tabs\movement.hpp" />
+    <ClInclude Include="ui\tabs\player.hpp" />
+    <ClInclude Include="ui\tabs\player_combat.hpp" />
+    <ClInclude Include="ui\tabs\player_visuals.hpp" />
+    <ClInclude Include="ui\tabs\visuals.hpp" />
+    <ClInclude Include="ui\textures\combat.hpp" />
+    <ClInclude Include="ui\textures\config.hpp" />
+    <ClInclude Include="ui\textures\extension.hpp" />
+    <ClInclude Include="ui\textures\movement.hpp" />
+    <ClInclude Include="ui\textures\misc.hpp" />
+    <ClInclude Include="ui\textures\player.hpp" />
+    <ClInclude Include="ui\textures\player_combat.hpp" />
+    <ClInclude Include="ui\textures\player_visuals.hpp" />
+    <ClInclude Include="ui\textures\skins.hpp" />
+    <ClInclude Include="ui\textures\visuals.hpp" />
+    <ClInclude Include="ui\values.hpp" />
+    <ClInclude Include="offsets.hpp" />
+    <ClInclude Include="patches\cm_calls.hpp" />
+    <ClInclude Include="utils\animate_clantag.hpp" />
+    <ClInclude Include="utils\chat_print.hpp" />
+    <ClInclude Include="vt_idx.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c1690c52-3a42-4866-a0ad-d5f7fd6d883a}</ProjectGuid>
+    <RootNamespace>dll</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+    <Import Project="..\sdk\sdk.vcxitems" Label="Shared" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../build/debug/</OutDir>
+    <IntDir>../build/obj/dll/debug/</IntDir>
+    <IncludePath>$(DXSDK_DIR)Include;$(SolutionDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../build/release/</OutDir>
+    <IntDir>../build/obj/dll/release/</IntDir>
+    <IncludePath>$(DXSDK_DIR)Include;$(SolutionDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>./pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <CallingConvention>FastCall</CallingConvention>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;D3dx9.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;DLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>./pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <CallingConvention>FastCall</CallingConvention>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;D3dx9.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

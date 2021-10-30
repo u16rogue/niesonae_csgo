@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hooks\clientcmd.hpp">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\painttraverse.hpp">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\wndproc.hpp">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.hpp" />
+    <ClInclude Include="hooks\reset.hpp">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\present.hpp">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hacks\engine_glow.hpp">
+      <Filter>hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\sceneend.hpp" />
+    <ClInclude Include="manager\player_manager.hpp" />
+    <ClInclude Include="hacks\clantag.hpp" />
+    <ClInclude Include="offsets.hpp" />
+    <ClInclude Include="utils\chat_print.hpp" />
+    <ClInclude Include="hooks\createmove.hpp" />
+    <ClInclude Include="vt_idx.hpp" />
+    <ClInclude Include="patches\cm_calls.hpp" />
+    <ClInclude Include="chat_commands\commands\cm_ctag.hpp" />
+    <ClInclude Include="initialization\init_base.hpp" />
+    <ClInclude Include="initialization\initialization.hpp" />
+    <ClInclude Include="initialization\inits\entry.hpp" />
+    <ClInclude Include="initialization\inits\modules.hpp" />
+    <ClInclude Include="initialization\inits\interfaces.hpp" />
+    <ClInclude Include="initialization\inits\values.hpp" />
+    <ClInclude Include="initialization\inits\patches.hpp" />
+    <ClInclude Include="initialization\inits\hacks.hpp" />
+    <ClInclude Include="initialization\inits\hooks.hpp" />
+    <ClInclude Include="utils\animate_clantag.hpp" />
+    <ClInclude Include="menu\sprites\sprite_menu.h" />
+    <ClInclude Include="initialization\inits\menu.hpp" />
+    <ClInclude Include="ui\menu.hpp" />
+    <ClInclude Include="ui\tab.hpp" />
+    <ClInclude Include="ui\values.hpp" />
+    <ClInclude Include="hooks\updateglows.hpp" />
+    <ClInclude Include="ui\textures\combat.hpp" />
+    <ClInclude Include="ui\textures\config.hpp" />
+    <ClInclude Include="ui\textures\extension.hpp" />
+    <ClInclude Include="ui\textures\movement.hpp" />
+    <ClInclude Include="ui\textures\player.hpp" />
+    <ClInclude Include="ui\textures\player_combat.hpp" />
+    <ClInclude Include="ui\textures\player_visuals.hpp" />
+    <ClInclude Include="ui\textures\skins.hpp" />
+    <ClInclude Include="ui\textures\visuals.hpp" />
+    <ClInclude Include="ui\tabs\player_combat.hpp" />
+    <ClInclude Include="ui\tabs\combat.hpp" />
+    <ClInclude Include="ui\tabs\player_visuals.hpp" />
+    <ClInclude Include="ui\tabs\visuals.hpp" />
+    <ClInclude Include="ui\tabs\misc.hpp" />
+    <ClInclude Include="ui\textures\misc.hpp" />
+    <ClInclude Include="ui\tabs\movement.hpp" />
+    <ClInclude Include="ui\tabs\extension.hpp" />
+    <ClInclude Include="ui\tabs\player.hpp" />
+    <ClInclude Include="ui\tabs\config.hpp" />
+    <ClInclude Include="chat_commands\cm_module.hpp" />
+    <ClInclude Include="chat_commands\cm_manager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="utils">
+      <UniqueIdentifier>{e9c86d00-1483-4ead-91c8-8fbcd7689b7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks">
+      <UniqueIdentifier>{bb529b21-08bf-4633-b993-14681b0f773b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hacks">
+      <UniqueIdentifier>{62fc4f0d-ded7-46b3-bf5d-b427c220672c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

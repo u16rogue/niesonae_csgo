@@ -1,0 +1,1 @@
+{"DateLastModified":"2021-01-20T21:14:58.5056367+08:00","InterfaceName":"C_BaseEntity_vtable0","FunctionCount":158,"PaddingFunctionPrefix":"zz_pad","OutputFile":"","NonDestructive":true,"InstanceRelative":false,"CloseOnWrite":false,"DefinedFunctions":[{"Index":157,"FunctionSignature":"bool IsPlayer(void)"},{"Index":155,"FunctionSignature":"bool IsAlive(void)"}]}

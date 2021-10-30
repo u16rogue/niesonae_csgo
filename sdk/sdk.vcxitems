@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{43554bb3-2008-4285-b022-9083dd04c5b5}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)color.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)console.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)encryption\xorstr.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)gui\canvas.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)gui\control_base.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)hash\fnv.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)math_cx.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)matrix.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)singleton.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\patch.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\hook.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\minhook\buffer.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\minhook\hde\hde32.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\minhook\hde\pstdint.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\minhook\hde\table32.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\minhook\MinHook.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\minhook\trampoline.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)module\module.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)module\module_csgo.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)types.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\hex.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\netvar_parser.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\pointers.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\sigscan.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\str_copy.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils\vfunc.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)angle.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\cliententitylist.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\client_class.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\cs_hud_chat.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\c_baseentity.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\c_baseplayer.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\c_cs_player.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\dt_common.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\dt_recv.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\dt_recv_decoder.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\glow_outline_effect.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\hud.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\hudelement.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\interface\IBaseClientDLL.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\interface\IClientEntityList.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\interface\IClientMode.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\interface\IPanel.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\interface\ISurface.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\interface\IVEngineClient.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\interface\IVRenderView.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\usercmd.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\utlrbtree.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)valve_sdk\utlvector.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)vector.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)vertex.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)winternal\environment.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)imports.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)winternal\structs.hpp" />
+  </ItemGroup>
+</Project>
